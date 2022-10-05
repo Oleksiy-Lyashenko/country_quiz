@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/country_quiz/static/css/main.3d13e4b4.css",
+    "main.css": "/country_quiz/static/css/main.9ea184d8.css",
     "main.js": "/country_quiz/static/js/main.f6c61180.js",
     "static/js/787.8d1e4d63.chunk.js": "/country_quiz/static/js/787.8d1e4d63.chunk.js",
     "static/media/end_img.svg": "/country_quiz/static/media/end_img.d76bfdf87016eda38fd439d929ce0371.svg",
     "static/media/background.png": "/country_quiz/static/media/background.41dbc5504a105eae7176.png",
     "static/media/box_img.svg": "/country_quiz/static/media/box_img.182b6171bba7c99e5444500b4daec361.svg",
     "index.html": "/country_quiz/index.html",
-    "main.3d13e4b4.css.map": "/country_quiz/static/css/main.3d13e4b4.css.map",
+    "main.9ea184d8.css.map": "/country_quiz/static/css/main.9ea184d8.css.map",
     "main.f6c61180.js.map": "/country_quiz/static/js/main.f6c61180.js.map",
     "787.8d1e4d63.chunk.js.map": "/country_quiz/static/js/787.8d1e4d63.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d13e4b4.css",
+    "static/css/main.9ea184d8.css",
     "static/js/main.f6c61180.js"
   ]
 }
