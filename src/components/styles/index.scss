@@ -24,6 +24,7 @@ code {
 
 .wrapper {
   height: 100%;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +68,7 @@ code {
   }
 
   &__question {
+    margin-top: 0;
     margin-bottom: 32px;
 
     font-weight: 700;
@@ -74,6 +76,15 @@ code {
     line-height: 36px;
 
     color: $blue;
+
+    &--end {
+      margin-bottom: 0;
+
+      font-size: 48px;
+      line-height: 72px;
+
+      color: $darkBlue;
+    }
   }
 
   &__list {
@@ -82,6 +93,15 @@ code {
     row-gap: 25px;
     list-style: none;
     padding: 0;
+
+    &--closed {
+      pointer-events: none;
+    }
+  }
+
+  &__flag {
+    width: 84px;
+    margin-bottom: 20px;
   }
 
   &__variant {
@@ -138,5 +158,79 @@ code {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 32px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 12px;
+    background-color: $yellow;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #ffffff;
+
+    cursor: pointer;
+  }
+
+  &__finish {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__finish-img {
+    margin-bottom: 72px;
+  }
+
+  &__result {
+    margin-bottom: 72px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: $darkBlue;
+  }
+
+  &__count-of-result {
+    &--big {
+      font-weight: 700;
+      font-size: 28px;
+      color: $green;
+    }
+
+    &--small {
+      font-weight: 700;
+      font-size: 28px;
+      color: $red;
+    }
+  }
+
+  &__finish-button {
+    padding: 18px 60px;
+    border: 2px solid $darkBlue;
+    border-radius: 12px;
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: $darkBlue;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $darkBlue;
+      color: $white;
+
+      transition: background-color 0.5s;
+    }
   }
 }

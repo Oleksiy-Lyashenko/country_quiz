@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import ClipLoader from 'react-spinners/ClipLoader';
-import boxImg from './assets/box_img.svg';
-import Question1 from './TypesOfQuestions/Question1';
+import QuizeBlock from './QuizeBlock';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -23,6 +21,13 @@ function App() {
     setRightAnswer({ ...arr[Math.floor(Math.random() * 3)] });
   };
 
+  const clickOnNext = () => {
+    setCountries([]);
+    setRightAnswer([])
+
+    fetchCountries();
+  }
+
   useEffect(() => {
     fetchCountries();
   }, []);
@@ -35,17 +40,7 @@ function App() {
         <div className="quiz">
           <h1 className="quiz__title">country quiz</h1>
 
-          <div className="quiz__block">
-            <img src={boxImg} alt="" className="quiz__img" />
-
-            {countries.length !== 0 ? (
-              <Question1 countries={countries} rightAnswer={rightAnswer} />
-            ) : (
-              <div className="quiz__loader-container">
-                <ClipLoader color="#6267d0b3" loading size="55" className="quiz__loader" />
-              </div>
-            )}
-          </div>
+          <QuizeBlock countries={countries} rightAnswer={rightAnswer} clickOnNext={clickOnNext}/>
         </div>
       </div>
     </div>
