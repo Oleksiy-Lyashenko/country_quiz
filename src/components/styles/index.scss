@@ -36,21 +36,31 @@ code {
 
   &__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 24px;
+    line-height: 36px;
 
     text-transform: uppercase;
 
     color: $whiteGray;
+
+    @include onPhone {
+      font-size: 36px;
+      line-height: 54px;
+    }
   }
 
   &__block {
     position: relative;
     box-sizing: border-box;
-    padding: 68px 32px;
+    padding: 68px 20px;
+    padding-top: 40px;
 
     background-color: #ffffff;
     border-radius: 24px;
+
+    @include onBigPhone {
+      padding: 68px 32px;
+    }
   }
 
   &__loader-container {
@@ -61,21 +71,30 @@ code {
 
   &__img {
     position: absolute;
-    top: -80px;
+    top: -50px;
     right: 0;
 
-    width: 160px;
+    width: 130px;
+
+    @include onPhone {
+      width: 160px;
+      top: -80px;
+    }
   }
 
   &__question {
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
 
     color: $blue;
+
+    @include onPhone {
+      margin-bottom: 32px;
+    }
 
     &--end {
       margin-bottom: 0;
@@ -90,9 +109,13 @@ code {
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 15px;
     list-style: none;
     padding: 0;
+
+    @include onPhone {
+      row-gap: 25px;
+    }
 
     &--closed {
       pointer-events: none;
@@ -101,7 +124,11 @@ code {
 
   &__flag {
     width: 84px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    @include onPhone {
+      margin-bottom: 20px;
+    }
   }
 
   &__variant {
