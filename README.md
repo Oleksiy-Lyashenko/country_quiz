@@ -1,4 +1,4 @@
-I created this app on base this <a href="https://www.figma.com/file/Gw0ZNBbYN8asqFlZWy3jG1">design</a>. 
+I created this app on base this <a href="https://www.figma.com/file/Gw0ZNBbYN8asqFlZWy3jG1" target="_blank">design</a>. 
 
 It's a little game when you want to waste your time on the unuseful things. This game has two types of questions: 
 - you need to choose right country, base on the capital; 
@@ -9,5 +9,5 @@ Tools that i used:
 - TypeScript;
 - Scss/Sass;
 - Redux Toolkit;
-- <a href="https://restcountries.com/">API</a>
+- <a href="https://restcountries.com/" target="_blank">API</a>
 
