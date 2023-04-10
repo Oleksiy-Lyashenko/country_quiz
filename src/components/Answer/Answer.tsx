@@ -42,7 +42,6 @@ export const Answer: React.FC<Props> = ({ country, index }) => {
           'quiz__variant--right': capital === rightAnswer.capital && answer !== '',
         },
       )}
-      key={capital}
       onClick={() => clickOnAnswer(capital)}>
       <span className="quiz__letter">{index}</span>
 
